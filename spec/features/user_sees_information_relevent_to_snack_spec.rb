@@ -14,5 +14,6 @@ feature 'When a user visits a vending machine show page' do
     expect(page).to have_content(snack.price)
     expect(page).to have_content(gregs.location)
     expect(page).to have_content(dons.location)
+    expect(page).to have_content(gregs.average_price)
   end
 end
