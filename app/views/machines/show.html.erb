@@ -4,5 +4,5 @@
 
 <% @machine.snacks.each do |snack| %>
   <p><%= snack.name%></p>
-  <p>Price: <%= snack.price%></p>
+  <p>Price: <%= number_to_currency(snack.price) %></p>
 <% end %>
